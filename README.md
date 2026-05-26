@@ -27,6 +27,9 @@ This is a Spring Boot backend system that manages worker attendance and automati
 
 ## 🗄️ Database Setup
 
+## 🗄️ Database Setup
+
 Create database:
+
 ```sql
 CREATE DATABASE attendance_db;

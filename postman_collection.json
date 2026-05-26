@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "Attendance System API",
+    "_postman_id": "a1b2c3d4",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Clock In",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"workerId\": 1,\n  \"siteId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/attendance/clock-in",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "attendance", "clock-in"]
+        }
+      }
+    },
+    {
+      "name": "Clock Out",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"workerId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/attendance/clock-out",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "attendance", "clock-out"]
+        }
+      }
+    }
+  ]
+}
